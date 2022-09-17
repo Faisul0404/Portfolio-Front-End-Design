@@ -1,0 +1,338 @@
+:root {
+  --box-shadow: 6px 6px 30px #bcbcbc, -6px -6px 30px #ffffff;
+  --purple: rgb(255, 19, 94);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  background-color: #ecf1f4;
+  color: black;
+}
+
+header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  /*padding-left: 60px;*/
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between;*/
+}
+header .logo {
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  display: flex;
+}
+header .lgimg {
+  width: 100%;
+  height: 50%;
+  padding-left: 50px;
+}
+header .logotext {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  padding-left: 8px;
+}
+/*header .logotext a:hover {
+    color: rgb(255, 19, 94);
+}*/
+
+header .nav-bar {
+  font-size: 12px;
+  padding-left: 715px;
+  padding-top: 12px;
+}
+
+header .nav-bar a {
+  padding: 10px 10px;
+}
+header .nav-bar a.active,
+header .nav-bar a:hover {
+  color: var(--purple);
+}
+
+#buynow {
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  background: linear-gradient(145deg, #ecf1f4, #ffffff);
+box-shadow:  5px 5px 12px #cccccc,
+             -5px -5px 12px #ffffff;
+}
+
+section {
+  padding: 8rem 13rem 0 13rem;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9rem;
+  align-items: center;
+}
+.home .home-text {
+    justify-items: center;
+}
+.home .home-text .welcome {
+    letter-spacing: 5px;
+    font-family: 'Roboto Serif', serif;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+.home .home-text .hi {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.home .home-text .atext {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.home .home-text .paraghraph {
+    margin-bottom: 7rem;
+}
+.home .home-text .jone {
+    color: var(--purple);
+}
+.home .home-text .acolor {
+    color: var(--purple);
+}
+
+.home .icon {
+  display: flex;
+}
+.home .icon .social {
+    padding-right: 12rem;
+}
+.home .social .facebook {
+  fill: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #e8ecee, #ffffff);
+  box-shadow:  24px 24px 45px #ecf1f4,
+  -24px -24px 45px #ffffff;
+  padding: 17px;
+  margin-right: 20px;
+}
+.home .social .shadow {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #e8ecee, #ffffff);
+  box-shadow:  24px 24px 45px #ecf1f4,
+  -24px -24px 45px #ffffff;
+  padding: 17px;
+  margin-right: 20px;
+  
+  }
+  
+  .home .skills .shadow {
+    width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #e8ecee, #ffffff);
+  box-shadow:  24px 24px 45px #ecf1f4,
+  -24px -24px 45px #ffffff;
+  padding: 17px;
+  margin-right: 20px;
+  }
+ 
+.home .home-text .icon-text {
+    font-family: 'Roboto Serif', serif;
+    font-size: 11px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+.home .home-image {
+  border-radius: 5px;
+  position: relative;
+  height: 500px;
+}
+.home .home-image .home-image-layer {
+    background: #ecf1f4;
+    box-shadow:  6px 6px 13px #aaaaaa,
+             -6px -6px 13px #ffffff;
+  position: absolute;
+  bottom: 4.5px;
+  right: left;
+  height: 400px;
+  width: 360px;
+  z-index: 0;
+}
+.home .home-image .home-image-src {
+  position: absolute;
+  background-color: transparent;
+  z-index: 10;
+  width: 360px;
+  height: 500px; 
+}
+
+.verticle-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(219, 219, 219);
+
+}
+
+/*Features section*/
+.features {
+  padding-bottom: 9rem;
+} 
+.feature-heading1 {
+    font-family: 'Roboto Serif', serif;
+    font-size: 10px;
+    margin-bottom: 8px;
+    color: var(--purple);
+}
+.feature-heading2 {
+  font-family: 'Roboto Serif', serif;
+  font-size: 30px;
+  font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  /*grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));*/
+  gap: 3rem;
+}
+.row .row1 {
+  z-index: 500;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #e6e8ea, #ffffff);
+  box-shadow:  6px 6px 18px #e3e2e2,
+  -6px -6px 18px #ffffff;
+  padding: 60px 40px 60px 40px;
+  
+  
+}
+.row .row1 .feature-icon {
+  width: 25px;
+  height: 25px;
+  fill: var(--purple);
+  margin-bottom: 8px;
+  
+
+}
+.row .row1 .tv {
+  fill: none;
+  stroke: var(--purple);
+}
+.row .row1 .row-heading {
+  font-family: 'Roboto Serif', serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+.row .row1 .row-paraghraph {
+  background-color: transparent;
+}
+
+.features .verticle-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(219, 219, 219);
+  margin-top: 7rem;
+
+}
+
+
+/*Features section*/
+/*my portfolio section*/
+.portfolio {
+  margin-bottom: 10rem;
+  padding-top: 0;
+}
+.portfolio .feedback {
+  justify-items: center;
+  font-family: 'Roboto Serif', serif;
+    font-size: 10px;
+    margin-bottom: 8px;
+    color: var(--purple);
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+.portfolio .heading1 {
+  font-family: 'Roboto Serif', serif;
+  font-size: 30px;
+  font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.portfolio .row {
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  /*grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));*/
+  gap: 3rem;
+  
+}
+.portfolio .row .row1 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #e6e8ea, #ffffff);
+  box-shadow:  6px 6px 18px #e3e2e2,
+  -6px -6px 18px #ffffff;
+  padding: 25px 25px 60px 25px;
+  
+
+}
+.portfolio .row .row1 img {
+  width: 100%;
+  height: 70%;
+  border-radius: 5px;
+  margin-bottom: 17px;
+}
+.portfolio .row .row1 .heading2 {
+  font-family: 'Roboto Serif', serif;
+    font-size: 10px;
+    margin-bottom: 8px;
+    color: var(--purple);
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+.portfolio .row .row1 .heading3 {
+  font-size: 20px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.portfolio .row .row1 .fa-heart {
+  color: #bcbcbc;
+  right: 5rem;
+  position: absolute;
+  top: 19rem;
+
+}
+.portfolio .row .row1 .fa-heart:hover {
+  color:var(--purple);
+  right: 5rem;
+  position: absolute;
+  top: 19rem;
+}
+.portfolio .row .row1 span {
+  margin-right: 1rem;
+  font-size: 1rem;
+  right: 2rem;
+  position: absolute;
+  top: 18.9rem;
+  background-color: transparent;
+  color: #bcbcbc;
+}
+/*my portfolio section*/
+
